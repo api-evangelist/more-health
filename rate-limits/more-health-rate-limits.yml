@@ -1,0 +1,17 @@
+generated: '2026-08-26'
+method: searched
+source: https://morehealth.com/sitemap.xml
+limit_count: 0
+rate_limits: []
+note: >-
+  Not applicable rather than undocumented. MORE Health exposes no public API, so there is no request
+  surface to limit and no runtime rate-limit signal an agent could read. No X-RateLimit-*,
+  RateLimit-* or Retry-After header could be observed because there is no callable endpoint to
+  observe one on, and no developer documentation exists in which a limit could be published.
+  Recorded as a measured zero; no RateLimits pointer is wired into apis.yml.
+evidence:
+- url: https://morehealth.com/openapi.json
+  status: 404
+- url: https://morehealth.com/sitemap.xml
+  status: 200
+  note: no developer, API or reference page among the 78 URLs

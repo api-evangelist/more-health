@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MORE Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/more-health_stock/
+MORE Health, Inc. is a global digital health company headquartered in San Mateo, California, with offices in Boston, Houston, New York, Beijing, Shanghai, Chengdu and Guangzhou. It provides expert medical second opinions and cross-border telemedicine through its proprietary, cloud-based Physician Collaboration Platform.
+
+**No public API surface.** As of 2026-08-26, MORE Health publishes no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL specification, Postman collection, MCP server, or A2A agent card. Its sitemap carries 26 marketing and policy pages per locale and no developer page, and no `api.`, `developer.`, `docs.`, `app.`, `portal.`, `status.` or `trust.` subdomain resolves. See the `x-coverage` block in `apis.yml` for the probed evidence.
+
+- https://morehealth.com/en

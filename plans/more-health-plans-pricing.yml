@@ -1,0 +1,24 @@
+generated: '2026-08-26'
+method: searched
+source: https://morehealth.com/sitemap.xml
+plan_count: 0
+plans: []
+note: >-
+  MORE Health publishes no pricing of any kind. Every one of the 78 URLs in its sitemap was reviewed
+  and none is a pricing or plans page; there is no /pricing, /plans or /cost path. The Employee
+  Benefits page describes "flexible pricing options for groups of any size" without naming a tier,
+  a rate or a unit, and every commercial path terminates in a form — /en/form/request-demo,
+  /en/form/request-hr-department, /en/form/request-international. This is a contact-sales motion for
+  a benefit sold to employers, health plans and hospitals, not a self-serve product. Recorded as a
+  measured zero rather than omitted; no Pricing or Plans pointer is wired into apis.yml, because the
+  provider publishes neither.
+evidence:
+- url: https://morehealth.com/sitemap.xml
+  status: 200
+  note: 78 URLs, no pricing page in any of the three locales
+- url: https://morehealth.com/en/employee-benefits
+  status: 200
+  note: '"flexible pricing options for groups of any size" — no figures'
+- url: https://morehealth.com/en/form/request-demo
+  status: 200
+  note: the actual commercial entry point

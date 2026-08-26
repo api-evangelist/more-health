@@ -1,17 +1,41 @@
 aid: more-health
 name: MORE Health
-description: 'MORE Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  MORE Health, Inc. is a global digital health company headquartered in San Mateo, California, with
+  offices in Boston, Houston, New York, Beijing, Shanghai, Chengdu and Guangzhou. It provides expert
+  medical second opinions and cross-border telemedicine through its proprietary, cloud-based Physician
+  Collaboration Platform, which lets a patient's treating physician and an expert specialist jointly
+  review medical history, hospital records, lab results, DICOM imaging, pathology imaging and genetic
+  testing, and co-develop a diagnosis and treatment plan over HIPAA-compliant video conferencing with
+  translation in 129 languages. Product lines include Expert Medical Opinion, MORE Health for Kids,
+  employee benefits for self-insured groups, a Medical Travel Concierge, mental health, Prodigy
+  Fertility and hospital solutions for health systems seeking international patient reach. The company
+  states it serves 6.2 million members across six continents and that its platform is ISO 27001
+  certified and GDPR- and HIPAA-compliant. MORE Health publishes no public developer program, API
+  reference, or machine-readable specification of any kind; the platform is sold to patients,
+  employers and hospitals as an end-user product.
+image: https://morehealth.com/brand/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/more-health/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
+x-tier: profiled
 x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Health
+- Healthcare
+- Digital Health
+- Telemedicine
+- Telehealth
+- Second Opinion
+- Medical Records
+- Care Coordination
+- Employee Benefits
+- HIPAA
+- Cross-Border Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +43,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/more-health-trust-center.yml
+- type: DomainSecurity
+  url: security/more-health-domain-security.yml
+- type: Conformance
+  url: conformance/more-health-conformance.yml
+- type: LLMsTxt
+  url: llms/more-health-llms.txt
 - type: Website
-  url: https://forgeglobal.com/more-health_stock/
+  url: https://morehealth.com/en
+- type: About
+  url: https://morehealth.com/en/our-story
+- type: Support
+  url: https://morehealth.com/en/form/contact-us
+- type: FAQ
+  url: https://morehealth.com/en/faqs
+- type: TermsOfService
+  url: https://morehealth.com/en/termsofuse
+- type: PrivacyPolicy
+  url: https://morehealth.com/en/privacy
+- type: CookiePolicy
+  url: https://morehealth.com/en/cookie-policy
+- type: Compliance
+  url: https://morehealth.com/en/security
+- type: LinkedIn
+  url: https://www.linkedin.com/company/more-health
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    MORE Health sells a cloud Physician Collaboration Platform to patients, employers and hospitals
+    as an end-user product only — its 78-URL sitemap contains 26 marketing and policy pages per
+    locale and not one developer, API, docs or status page, and api./developer./developers./docs./
+    app./portal./status./trust.morehealth.com all fail to resolve in DNS.
+  evidence:
+  - url: https://morehealth.com/sitemap.xml
+    status: 200
+  - url: https://morehealth.com/openapi.json
+    status: 404
+  - url: https://morehealth.com/llms.txt
+    status: 404
+  - url: https://morehealth.com/.well-known/agent-card.json
+    status: 404
+  - url: https://morehealth.com/.well-known/security.txt
+    status: 404
+  checked: '2026-08-26'

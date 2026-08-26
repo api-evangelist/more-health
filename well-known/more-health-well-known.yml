@@ -1,0 +1,65 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every MORE Health host known to this profile
+note: >-
+  Every /.well-known/ path probed on morehealth.com returned HTTP 404 with the site's Next.js HTML
+  404 page. No security.txt, no OpenID/OAuth metadata, no api-catalog, no ai-plugin, no A2A agent
+  card. This file records a measured ABSENCE, so no WellKnown / SecurityTxt / APICatalog pointer is
+  wired into apis.yml. MORE Health resolves no api., developer., developers., docs., app., portal.,
+  status. or trust. subdomain, so morehealth.com is the only host there was anything to probe.
+hosts:
+- host: morehealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+other_probes:
+- url: https://morehealth.com/robots.txt
+  status: 200
+  note: 'User-Agent: * / Allow: / — no disallow rules; sitemap at https://morehealth.com/sitemap.xml'
+- url: https://morehealth.com/sitemap.xml
+  status: 200
+  note: 78 URLs, 26 marketing pages x 3 locales (en/es/zh). No developer, API, docs or status page.
+- url: https://morehealth.com/llms.txt
+  status: 404
+- url: https://morehealth.com/openapi.json
+  status: 404
+- url: https://morehealth.com/openapi.yaml
+  status: 404
+- url: https://morehealth.com/swagger.json
+  status: 404
+- url: https://morehealth.com/api-docs
+  status: 404
+- url: https://morehealth.com/docs
+  status: 307
+  note: locale redirect to /en/docs, which is the 404 shell — not a docs site
+- url: https://morehealth.com/redoc
+  status: 307
+  note: locale redirect to /en/redoc, which is the 404 shell
+unresolved_hosts:
+- api.morehealth.com
+- developer.morehealth.com
+- developers.morehealth.com
+- docs.morehealth.com
+- app.morehealth.com
+- portal.morehealth.com
+- status.morehealth.com
+- trust.morehealth.com
