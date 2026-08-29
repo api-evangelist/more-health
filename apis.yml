@@ -14,6 +14,17 @@ description: >-
   certified and GDPR- and HIPAA-compliant. MORE Health publishes no public developer program, API
   reference, or machine-readable specification of any kind; the platform is sold to patients,
   employers and hospitals as an end-user product.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://morehealth.com/brand/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/more-health/refs/heads/main/apis.yml
 x-type: company
