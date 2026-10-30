@@ -64,8 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MORE Health, Inc. is a global digital health company headquartered in San Mateo, California, with offices in Boston, Houston, New York, Beijing, Shanghai, Chengdu and Guangzhou. It provides expert medical second opinions and cross-border telemedicine through its proprietary, cloud-based Physician Collaboration Platform.
+MORE Health, Inc. is a global digital health company headquartered in San Mateo, California, with offices in Boston, Houston, New York, Beijing, Shanghai, Chengdu and Guangzhou. It provides expert medical second opinions and cross-border telemedicine through its proprietary, cloud-based Physician Collaboration Platform, which lets a patient's treating physician and an expert specialist jointly review medical history, hospital records, lab results, DICOM imaging, pathology imaging and genetic testing, and co-develop a diagnosis and treatment plan over HIPAA-compliant video conferencing with translation in 129 languages. Product lines include Expert Medical Opinion, MORE Health for Kids, employee benefits for self-insured groups, a Medical Travel Concierge, mental health, Prodigy Fertility and hospital solutions for health systems seeking international patient reach. The company states it serves 6.2 million members across six continents and that its platform is ISO 27001 certified and GDPR- and HIPAA-compliant. MORE Health publishes no public developer program, API reference, or machine-readable specification of any kind; the platform is sold to patients, employers and hospitals as an end-user product.
 
-**No public API surface.** As of 2026-08-26, MORE Health publishes no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL specification, Postman collection, MCP server, or A2A agent card. Its sitemap carries 26 marketing and policy pages per locale and no developer page, and no `api.`, `developer.`, `docs.`, `app.`, `portal.`, `status.` or `trust.` subdomain resolves. See the `x-coverage` block in `apis.yml` for the probed evidence.
+**Areas:** Company · Health · Healthcare · Digital Health · Telehealth · Second Opinion · Medical Records · Care Coordination · Employee Benefits · HIPAA · Cross-Border Care
 
-- https://morehealth.com/en
+## MORE Health on APIs.io
+
+Everything profiled for MORE Health is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/more-health/](https://apis.io/providers/more-health/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [More Health Domain Security](https://apis.io/security/more-health/more-health-domain-security/)
+- [More Health Trust Center](https://apis.io/security/more-health/more-health-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [More Health Plans Pricing](https://apis.io/plans/more-health/more-health-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [More Health Rate Limits](https://apis.io/rate-limits/more-health/more-health-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://morehealth.com/en)
+- [Support](https://morehealth.com/en/form/contact-us)
+- [Compliance](https://morehealth.com/en/security)
+- [Terms of service](https://morehealth.com/en/termsofuse)
+- [Privacy policy](https://morehealth.com/en/privacy)
+
+## API Evangelist rating
+
+**Kin Score 17.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 36.8 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/more-health/](https://apis.io/providers/more-health/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MORE Health: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/more-health/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
